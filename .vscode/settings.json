@@ -1,0 +1,10 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+    },
+    "prettier.requireConfig": true,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.output.wordWrap": true,
+    "workbench.iconTheme": "vscode-icons"
+}
