@@ -1,19 +1,19 @@
 import streamlit as st
-from langchain.prompts import PromptTemplate
 
+st.set_page_config(page_title="FullstackGPT Home", page_icon="😘")
+st.title("title")
 
-a = [1, 2, 3, 4]
+with st.sidebar:
+    st.title("sidebar title")
+    st.text_input("")
 
-model = st.selectbox("Choose your model", ("GPT-3", "GPT-4"))
+tab_one, tab_two, tab_three = st.tabs(["A", "B", "C"])
 
+with tab_one:
+    st.write("a")
 
-if model == "GPT-3":
-    st.write("cheap")
-else:
-    st.write("not cheap")
+with tab_two:
+    st.write("b")
 
-    name = st.text_input("What is your name?")
-    st.write(name)
-
-    value = st.slider("temperature", min_value=0.1, max_value=1.0)
-    st.write(value)
+with tab_three:
+    st.write("c")
