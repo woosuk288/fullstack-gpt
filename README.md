@@ -1,0 +1,1 @@
+### gitbash : source ./env/Scripts/Activate
